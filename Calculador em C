@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+main(){
+float numero1,numero2;
+float opcao;
+ 
+printf("numero 1:\n");
+scanf("%d",&numero1);
+printf("numero 2:\n");
+scanf("%d",&numero2);
+
+printf("Escolha uma das opções abaixo:");
+printf("1- Adição \n");
+printf("2- Subtração \n");
+printf("3- Multiplicador \n");
+printf("4- Divisão \n");
+scanf("%d",&opcao);
+
+switch(opcao){
+	case 1:
+		printf("Resultado:%d",numero1+numero2);
+	break;
+	case2;
+	    printf("Resultado:%d",numero1-numero2);
+	break;
+	case3;
+	    printf("Resultado:%d",numero1*numero2);
+	break;
+	case4;
+	    printf("Resultado:%d",numero1/numero2);
+	break;
+	default;
+	    printf("Opção invalida");
+            }
+}
