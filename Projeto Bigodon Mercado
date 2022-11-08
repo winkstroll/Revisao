@@ -1,14 +1,37 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#include <Windows.h>
-#include <conio.h>
+
+char seres[50];
+char sobrenome[50];
+int idade;
+
 struct produto{
+	char  nome[50];
 	float preco;
-	char nome[30];
+	
 };
-struct produto preciveis[3];
-struct produto npreciveis[3];
+
+struct cadastro{
+	
+  
+};
+void usuario(){
+
+  printf("Realize seu Cadastro\n");
+
+  printf("Digite seu nome:\n ");
+  scanf(" %s",&seres);
+  printf("Digite seu sobrenome:\n ");
+  scanf(" %s",&sobrenome);
+  printf("Digite sua idade:\n ");
+  scanf("%d", &idade);
+  
+
+  }
+
+struct produto pereciveis[3];
+struct produto npereciveis[3];
 struct produto vegetais[3];
 struct produto frutas[3];
 struct produto carne[3];
@@ -20,209 +43,204 @@ struct produto eletronicos[3];
 struct produto drogaria[3];
 struct produto bebida[3];
 struct produto alcoolico[3];
-void preenchendo{
+
+void preenchendovetores() {
 	setlocale(LC_ALL,"Portuguese");
-	pereciveis[0].nome='Arroz';
+	pereciveis[0].nome[50]='Arroz';
 	pereciveis[0].preco=5.70;
-	pereciveis[1].nome='Feijão';
+	pereciveis[1].nome[50]='Feijao';
 	pereciveis[1].preco=7.00;
-	pereciveis[2].nome='Soja';
+	pereciveis[2].nome[50]='Soja';
 	pereciveis[2].preco=10.00;
-	pereciveis[3].nome='Macarrão';
+	pereciveis[3].nome[50]='Macarrao';
 	pereciveis[3].preco=6.00;
-	npreciveis[0].nome='Milho';
-	npreciveis[0].preco=10.00;
-	npreciveis[1].nome='Ervilha';
-	npreciveis[1].preco=8.00;
-	npreciveis[2].nome='Atum';
-	npreciveis[2].preco=7.50;
-	npreciveis[3].nome='Molho de Tomate';
-	npreciveis[3].preco=15.00;
-	vegetais[0].nome='Abobrinha';
+	npereciveis[0].nome[50]='Milho';
+	npereciveis[0].preco=10.00;
+	npereciveis[1].nome[50]='Ervilha';
+	npereciveis[1].preco=8.00;
+	npereciveis[2].nome[50]='Atum';
+	npereciveis[2].preco=7.50;
+	npereciveis[3].nome[50]='Molho de Tomate';
+	npereciveis[3].preco=15.00;
+	vegetais[0].nome[50]='Abobrinha';
 	vegetais[0].preco=5.00;
-	vegetais[1].nome='Alface';
+	vegetais[1].nome[50]='Alface';
 	vegetais[1].preco=6.00;
-	vegetais[2].nome='Chuchu';
+	vegetais[2].nome[50]='Chuchu';
 	vegetais[2].preco=4.50;
-	vegetais[3].nome='Brocolis';
+	vegetais[3].nome[50]='Brocolis';
 	vegetais[3].preco=10.00;
-    frutas[0].nome='Banana';
-    frutas[0].preco=10.00;
-    frutas[1].nome='Abacaxi';
-    frutas[1].preco=10.00;
-    frutas[2].nome='Manga';
-    frutas[2].preco=10.00;
-    frutas[3].nome='Maracujá';
-    frutas[3].preco=10.00;
-    carne[0].nome='Suina';
-    carne[0].preco=10.00;
-    carne[1].nome='Peixe';
-    carne[1].preco=10.00;
-    carne[2].nome='Frango';
-    carne[2].preco=10.00;
-    carne[3].nome='Bovina';
-    carne[3].preco=10.00;
-    frios[0].nome='Queijo';
-    frios[0].preco=10.00;
-    frios[1].nome='Presunto';
-    frios[1].preco=10.00;
-    frios[2].nome='Lombinho';
-    frios[2].preco=10.00;
-    frios[3].nome='Peito de Peru';
-    frios[3].preco=10.00;
-    higiene[0].nome='Desodorante';
-    higiene[0].preco=10.00;
-    higiene[1].nome='Papel Higienico';
-    higiene[1].preco=10.00;
-    higiene[2].nome='Sabonete';
-    higiene[2].preco=10.00;
-    higiene[3].nome='Pasta de Dente';
-    higiene[3].preco=10.00;
-    biscoitos[0].nome='Bono';
-    biscoitos[0].preco=10.00;
-    biscoitos[1].nome='Negresco';
-    biscoitos[1].preco=10.00;
-    biscoitos[2].nome='Treloso';
-    biscoitos[2].preco=10.00;
-    biscoitos[3].nome='Oreo';
+  frutas[0].nome[50]='Banana';
+  frutas[0].preco=10.00;
+  frutas[1].nome[50]='Abacaxi';
+  frutas[1].preco=10.00;
+  frutas[2].nome[50]='Manga';
+  frutas[2].preco=10.00;
+  frutas[3].nome[50]='Maracuja';
+  frutas[3].preco=10.00;
+  carne[0].nome[50]='Suina';
+  carne[0].preco=10.00;
+  carne[1].nome[50]='Peixe';
+  carne[1].preco=10.00;
+  carne[2].nome[50]='Frango';
+  carne[2].preco=10.00;
+  carne[3].nome[50]='Bovina';
+  carne[3].preco=10.00;
+  frios[0].nome[50]='Queijo';
+  frios[0].preco=10.00;
+  frios[1].nome[50]='Presunto';
+  frios[1].preco=10.00;
+  frios[2].nome[50]='Lombinho';
+  frios[2].preco=10.00;
+  frios[3].nome[50]='Peito de Peru';
+  frios[3].preco=10.00;
+  higiene[0].nome[50]='Desodorante';
+  higiene[0].preco=10.00;
+  higiene[1].nome[50]='Papel Higienico';
+  higiene[1].preco=10.00;
+  higiene[2].nome[50]='Sabonete';
+  higiene[2].preco=10.00;
+  higiene[3].nome[50]='Pasta de Dente';
+  higiene[3].preco=10.00;
+  biscoitos[0].nome[50]='Bono';
+  biscoitos[0].preco=10.00;
+  biscoitos[1].nome[50]='Negresco';
+  biscoitos[1].preco=10.00;
+  biscoitos[2].nome[50]='Treloso';
+  biscoitos[2].preco=10.00;
+  biscoitos[3].nome[50]='Oreo';
 	biscoitos[3].preco=10.00;    
-    brinquedos[0].nome='Barbie';
-    brinquedos[0].preco=10.00;
-    brinquedos[1].nome='Poly';
-    brinquedos[1].preco=10.00;
-    brinquedos[2].nome='Max Steel';
-    brinquedos[2].preco=10.00;
-    brinquedos[3].nome='HotWheels';
+  brinquedos[0].nome[50]='Barbie';
+  brinquedos[0].preco=10.00;
+  brinquedos[1].nome[50]='Poly';
+  brinquedos[1].preco=10.00;
+  brinquedos[2].nome[50]='Max Steel';
+  brinquedos[2].preco=10.00;
+  brinquedos[3].nome[50]='HotWheels';
 	brinquedos[3].preco=10.00;	
-	eletronicos[0].nome='Iphone 14';
+	eletronicos[0].nome[50]='Iphone 14';
 	eletronicos[0].preco=10.00;
-	eletronicos[1].nome='Pc Gamer';
+	eletronicos[1].nome[50]='Pc Gamer';
 	eletronicos[1].preco=5.500;
-	eletronicos[2].nome='Headset Hyper X';
+	eletronicos[2].nome[50]='Headset Hyper X';
 	eletronicos[2].preco=700.00;
-	eletronicos[3].nome='Monitor 144 Hz';
+	eletronicos[3].nome[50]='Monitor 144 Hz';
 	eletronicos[3].preco=1.500;
-	drogaria[0].nome='Dipirona';	
+	drogaria[0].nome[50]='Dipirona';	
 	drogaria[0].preco=10.00;
-	drogaria[1].nome='Nimesulida';
+	drogaria[1].nome[50]='Nimesulida';
 	drogaria[1].preco=10.00;
-	drogaria[2].nome='Alegra';
+	drogaria[2].nome[50]='Alegra';
 	drogaria[2].preco=10.00;
-	drogaria[3].nome='Alprazolam';
+	drogaria[3].nome[50]='Alprazolam';
 	drogaria[3].preco=10.00;
-	bebida[0].nome='Água';
+	bebida[0].nome[50]='Agua';
 	bebida[0].preco=10.00;
-	bebida[1].nome='Suco';
+	bebida[1].nome[50]='Suco';
 	bebida[1].preco=10.00;
-	bebida[2].nome='Chá';
+	bebida[2].nome[50]='Cha';
 	bebida[2].preco=10.00;
-	bebida[3].nome='Água com Gás';
+	bebida[3].nome[50]='Agua com Gas';
 	bebida[3].preco=10.00;
-	alcoolico[0].nome='Jurupinga';
-	alcoolico[0].preco=10.00;
-	alcoolico[1].nome='Budweiser';
-	alcoolico[1].preco=10.00;
-	alcoolico[2].nome='Absolut';
-	alcoolico[2].preco=10.00;
-	alcoolico[3].nome='Corote';
-	alcoolico[3].preco=10.00;
-	
-	
-	
-	
-	
+	alcoolico[0].nome[50]='Jurupinga';
+	alcoolico[0].preco=11.00;
+	alcoolico[1].nome[50]='Budweiser';
+	alcoolico[1].preco=12.00;
+	alcoolico[2].nome[50]='Absolut';
+	alcoolico[2].preco=13.00;
+	alcoolico[3].nome[50]='Corote';
+	alcoolico[3].preco=14.00;
 }
-
-
-
 int opcao;
+int confi;
 int quero=1;
+int quero2=1;
 float conta=0;
 float menu (){
-     setlocale(LC_ALL,"Portuguese");
-     
-	 
+  setlocale(LC_ALL,"Portuguese");
+  
 while(quero==1){
-printf("Escolha uma das opções abaixo: \n");
+for(int i=0;i<4;i++){
 
-printf(" PERECÍVEIS\n");
-printf(" 1-ARROZ\n");
-printf(" 2-Feijão\n");
-printf(" 3-Soja\n");
-printf(" 4-Macarrão\n");
-printf(" ENLATADO\n");
-printf(" 5-Milho\n");
-printf(" 6-Ervilha\n");
-printf(" 7-Atum\n");
-scanf("%d",&opcao);
-switch(opcao){
-	case 1:
-		conta=conta+2.30;
-		break;
-	case 2:
-		conta=conta+2.70;
-		break;
-	case 3:
-		conta=conta+5.00;
-		break;
-	case 4:
-		conta=conta+3.00;
-		break;
-	
-	
-	
+printf("%d- %s \t %.2f\n", i+1, pereciveis[i].nome, pereciveis[i].preco);
+
 }
+  scanf("%d",&opcao);
+  switch(opcao){
+    case 1:
+    conta=conta + 5.70;
+    break;
+    case 2:
+    conta=conta + 7.00;
+    break;
+    case 3:
+    conta=conta + 10.00;
+    break;
+    case 4:
+    conta=conta + 6.00;
+    break;
+    
+  }
 
 
 
-
-
-
-
-printf("Deseja continuar se sim pressione 1 se não 0:\n");
+  
+  
+  printf("Deseja continuar se sim pressione 1 se não 0:\n");
 scanf("%d",&quero);
+  }
+if(idade>=18){
+
+while(quero2==1){
+for(int j=0;j<4;j++){
+
+printf("%d- %s \t %.2f\n", j+1, alcoolico[j].nome, alcoolico[j].preco);
 
 }
-	 	return conta;
+  scanf("%d",&confi);
+  switch(confi){
+    case 1:
+    conta=conta + 11.00;
+    break;
+    case 2:
+    conta=conta + 12.00;
+    break;
+    case 3:
+    conta=conta + 13.00;
+    break;
+    case 4:
+    conta=conta + 14.00;
+    break;
+    
+  }
+
+  
+  
+  printf("Deseja continuar se sim pressione 1 se não 0:\n");
+scanf("%d",&quero2);
+  }
+
+  
+}
+  
+return conta;	
+
+}
 	 	
 
 
-}
-
 main(){
+preenchendovetores();
 setlocale(LC_ALL,"Portuguese");
 
 printf("Bem-Vindos ao Supermercado Bigodon\n");
 printf("Carregando o Sistema...\n");
-Sleep(3000);
+
 printf("Carregado\n");
 
 
-
-printf("Valor da conta: %f",menu());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+usuario();
+printf("Valor da conta: %.2f",menu());
 
 
 
@@ -230,6 +248,3 @@ printf("Valor da conta: %f",menu());
 
 system("PAUSE");
 }
-
-
-
